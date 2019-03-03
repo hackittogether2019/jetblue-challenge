@@ -4,9 +4,9 @@
 
 body {
   font: 'Verdana';
+  margin: 0;
   height: 100vh;
   width: 100vw;
-  margin: 0;
   background: linear-gradient(45deg, #052158, #18498d, #275fa4);
   color: white;
   letter-spacing: 0.05em;
@@ -106,14 +106,21 @@ input[type='radio'] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
+  background-color: #eee;
+  width: 100%;
+  height: 500px;
+}
+
+.twitter-widget h4 {
+  color: #383838;
+  margin: 30px 0 25px 0;
 }
 
 /* Mobile Views */
 @media only screen and (max-width: 600px) {
-  .choice-buttons {
-    height: 100px;
-    width: 200px;
-    flex: 0 1 auto;
-    margin: 10px;
+  .choices-container {
+    width: 100%;
+    height: 100%;
   }
 }
