@@ -1,143 +1,200 @@
-[{
-  "name": "What’s your idea of a perfect first night on vacation?",
-  "choices": [{
-    "label": "Sitting in a jacuzzi surrounded by snow",
-    "value": ["Alaska", "Denver"]
-  }, {
-    "label": "Seeing live music and bar-hopping",
-    "value": ["New Orleans", "Boston"],
-    "popup": "Pregame on your flight with JetBlue's drink options and score 50% off with your JetBlue MasterCard!"
-  }, {
-    "label": "Dancing on the beach",
-    "value": ["San Juan"]
-  }, {
-    "label": "Candelit dinner in intimate digs with possible celebrity sightings",
-    "value": ["Long Beach"]
-  }]
-},{
-  "name": "What's your first stop when you land?",
-  "choices": [{
-    "label": "Theme parks",
-    "value": ["Orlando"]
-  }, {
-    "label": "The Beach",
-    "value": ["Long Beach", "San Juan"]
-  }, {
-    "label": "Historical Landmarks",
-    "value": ["Boston", "New Orleans"]
-  }, {
-    "label": "Hiking",
-    "value": ["Alaska", "Denver"]
-  }]
-},{
-  "name": "How do you entertain yourself on a flight?",
-  "choices": [{
-    "label": "Watch cartoons",
-    "value": ["Orlando"]
-  }, {
-    "label": "Drink Heavily",
-    "value": ["New Orleans", "Boston"]
-  }, {
-    "label": "Research native wildlife from your destination",
-    "value": ["Alaska", "Denver"]
-  }, {
-    "label": "Snack on everything in sight",
-    "value": ["Long Beach", "New Orleans"]
-  }]
-},{
-  "name": "How do you prefer to get around a new place?",
-  "choices": [{
-    "label": "Walk or bike around to take it all in",
-    "value": ["New Orleans", "Boston"]
-  }, {
-    "label": "I'm on the beach - not moving!",
-    "value": ["San Juan", "Long Beach"]
-  }, {
-    "label": "Give me two skiis and I'm good to go",
-    "value": ["Denver", "Alaska"]
-  }, {
-    "label": "Air conditioning and the radio are a MUST",
-    "value": ["Long Beach", "Orlando"]
-  }]
-},{
-  "name": "How do you pack your luggage?",
-  "choices": [{
-    "label": "As little as possible",
-    "value": ["San Juan", "Orlando"]
-  }, {
-    "label": "I need to have snacks ready at all times",
-    "value": ["New Orleans", "Long Beach"]
-  }, {
-    "label": "Packing layers is key",
-    "value": ["Denver", "Alaska"]
-  }, {
-    "label": "As long as I don't forget my chargers, who cares!",
-    "value": ["New Orleans", "Boston", "Long Beach", "Orlando"]
-  }]
-},{
-  "name": "What's your favorite season?",
-  "choices": [{
-    "label": "Winter",
-    "value": ["Denver", "Alaska"]
-  }, {
-    "label": "Summer",
-    "value": ["New Orleans", "Long Beach", "San Juan", "Orlando"]
-  }, {
-    "label": "Spring",
-    "value": ["Denver"]
-  }, {
-    "label": "Fall",
-    "value": ["Boston", "Denver"]
-  }]
-},{
-  "name": "What is your favorite Food?",
-  "choices": [{
-    "label": "Beignets",
-    "value": ["New Orleans"]
-  }, {
-    "label": "Lobster roll",
-    "value": ["Boston"]
-  }, {
-    "label": "Fresh salmon",
-    "value": ["Alaska"]
-  }, {
-    "label": "Rice, beans, and plantains",
-    "value": ["San Juan"]
-  }]
-},{
-  "name": "What's your philosophy when you go on vacation?",
-  "choices": [{
-    "label": "Relax",
-    "value": ["San Juan"]
-  }, {
-    "label": "Have fun",
-    "value": ["Orlando"]
-  }, {
-    "label": "Interact with nature",
-    "value": ["Denver", "Alaska"]
-  }, {
-    "label": "Party!",
-    "value": ["New Orleans", "Boston"]
-  }]
-},{
-  "name": "What is NOT one of JetBlue's 5 core values?",
-  "choices": [{
-    "label": "Safety",
-    "value": []
-  }, {
-    "label": "Integrity",
-    "value": []
-  }, {
-    "label": "Speed",
-    "value": []
-  }, {
-    "label": "Caring",
-    "value": []
-  },{
-    "label": "Passion",
-    "value": []
-  },{
-    "label": "Fun",
-    "value": []
-  }]
-}]
+[
+	{
+		"name": "What’s your idea of a perfect first night on vacation?",
+		"choices": [
+			{
+				"label": "Sitting in a jacuzzi surrounded by snow",
+				"value": ["Denver"]
+			},
+			{
+				"label": "Seeing live music and bar-hopping",
+				"value": ["New Orleans", "Boston"],
+				"popup": "Pregame on your flight with JetBlue's drink options and score 50% off with your JetBlue MasterCard!"
+			},
+			{
+				"label": "Dancing on the beach",
+				"value": ["San Juan"]
+			},
+			{
+				"label": "Candelit dinner in intimate digs with possible celebrity sightings",
+				"value": ["Long Beach"]
+			}
+		]
+	},
+	{
+		"name": "What's your first stop when you land?",
+		"choices": [
+			{
+				"label": "Theme parks",
+				"value": ["Orlando"]
+			},
+			{
+				"label": "The Beach",
+				"value": ["Long Beach", "San Juan"]
+			},
+			{
+				"label": "Historical Landmarks",
+				"value": ["Boston", "New Orleans"]
+			},
+			{
+				"label": "Hiking",
+				"value": ["Denver"]
+			}
+		]
+	},
+	{
+		"name": "How do you entertain yourself on a flight?",
+		"choices": [
+			{
+				"label": "Watch cartoons",
+				"value": ["Orlando"]
+			},
+			{
+				"label": "Drink Heavily",
+				"value": ["New Orleans", "Boston"]
+			},
+			{
+				"label": "Research native wildlife from your destination",
+				"value": ["Denver"]
+			},
+			{
+				"label": "Snack on everything in sight",
+				"value": ["Long Beach", "New Orleans"]
+			}
+		]
+	},
+	{
+		"name": "How do you prefer to get around a new place?",
+		"choices": [
+			{
+				"label": "Walk or bike around to take it all in",
+				"value": ["New Orleans", "Boston"]
+			},
+			{
+				"label": "I'm on the beach - not moving!",
+				"value": ["San Juan", "Long Beach"]
+			},
+			{
+				"label": "Give me two skiis and I'm good to go",
+				"value": ["Denver"]
+			},
+			{
+				"label": "Air conditioning and the radio are a MUST",
+				"value": ["Long Beach", "Orlando"]
+			}
+		]
+	},
+	{
+		"name": "How do you pack your luggage?",
+		"choices": [
+			{
+				"label": "As little as possible",
+				"value": ["San Juan", "Orlando"]
+			},
+			{
+				"label": "I need to have snacks ready at all times",
+				"value": ["New Orleans", "Long Beach"]
+			},
+			{
+				"label": "Packing layers is key",
+				"value": ["Denver"]
+			},
+			{
+				"label": "As long as I don't forget my chargers, who cares!",
+				"value": ["New Orleans", "Boston", "Long Beach", "Orlando"]
+			}
+		]
+	},
+	{
+		"name": "What's your favorite season?",
+		"choices": [
+			{
+				"label": "Winter",
+				"value": ["Denver"]
+			},
+			{
+				"label": "Summer",
+				"value": ["New Orleans", "Long Beach", "San Juan", "Orlando"]
+			},
+			{
+				"label": "Spring",
+				"value": ["New Orleans"]
+			},
+			{
+				"label": "Fall",
+				"value": ["Boston", "Denver"]
+			}
+		]
+	},
+	{
+		"name": "What is your favorite Food?",
+		"choices": [
+			{
+				"label": "Beignets",
+				"value": ["New Orleans"]
+			},
+			{
+				"label": "Lobster roll",
+				"value": ["Boston"]
+			},
+			{
+				"label": "Fresh salmon",
+				"value": ["Denver"]
+			},
+			{
+				"label": "Rice, beans, and plantains",
+				"value": ["San Juan"]
+			}
+		]
+	},
+	{
+		"name": "What's your philosophy when you go on vacation?",
+		"choices": [
+			{
+				"label": "Relax",
+				"value": ["San Juan"]
+			},
+			{
+				"label": "Have fun",
+				"value": ["Orlando"]
+			},
+			{
+				"label": "Interact with nature",
+				"value": ["Denver"]
+			},
+			{
+				"label": "Party!",
+				"value": ["New Orleans", "Boston"]
+			}
+		]
+	},
+	{
+		"name": "What is NOT one of JetBlue's 5 core values?",
+		"choices": [
+			{
+				"label": "Safety",
+				"value": []
+			},
+			{
+				"label": "Integrity",
+				"value": []
+			},
+			{
+				"label": "Speed",
+				"value": []
+			},
+			{
+				"label": "Caring",
+				"value": []
+			},
+			{
+				"label": "Passion",
+				"value": []
+			},
+			{
+				"label": "Fun",
+				"value": []
+			}
+		]
+	}
+]
