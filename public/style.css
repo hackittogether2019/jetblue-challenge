@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+a {
+  font-size: 40px;
+  color: 275fa4;
+  border: 1px solid #275fa4;
+  background-color: white;
+  /* border-radius: 10%; */
+  padding: 10px;
+}
+
 /* h6 {
   margin: 500px;
 } */
