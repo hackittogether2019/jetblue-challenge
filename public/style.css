@@ -2,16 +2,26 @@
   box-sizing: border-box;
 }
 
+/* h6 {
+  margin: 500px;
+} */
 body {
-  font: 'Verdana';
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(45deg, #052158, #18498d, #275fa4);
+  font: "Verdana";
+
+  height: 100vmax;
+
+  width: 100vmax;
+  background-image: linear-gradient(45deg, #052158, #18498d, #275fa4);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   letter-spacing: 0.05em;
 }
 
+.protip-div {
+  height: 175px;
+  margin: 500px;
+}
 .header {
   width: 100%;
   display: flex;
@@ -53,7 +63,7 @@ body {
 
 #app {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,11 +90,13 @@ body {
 } */
 
 #logo {
-  /* flex: 0 1 auto; */
-  /* height: 200px; */
+  flex: 0 1 auto;
+  /* height: 400px; */
+  /* margin-bottom: 10px; */
+  margin-top: -100px;
   width: auto;
-  /* align-self: center; */
-  background-color: rgb(255, 255, 255);
+  align-self: center;
+  /* background-color: rgb(255, 255, 255); */
   border-radius: 25px;
 }
 
@@ -113,7 +125,7 @@ img {
   border-radius: 5px;
 }
 
-input[type='radio'] {
+input[type="radio"] {
   margin-right: 1em;
 }
 
@@ -122,7 +134,7 @@ input[type='radio'] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin-top: 200px;
   background-color: #eee;
   width: 100%;
   height: 400px;
