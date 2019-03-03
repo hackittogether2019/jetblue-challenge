@@ -1,9 +1,10 @@
-import React from "react";
-import Load from "./Load";
-import Questions from "./Questions";
+import React from 'react';
+import Load from './Load';
+import Questions from './Questions';
+import TwitterWidget from './TwitterWidget';
 
 var styles = {
-  width: "400px"
+  width: '400px',
 };
 
 const Main = () => (
@@ -20,6 +21,7 @@ const Main = () => (
       endpoint="questions"
       render={({ questions }) => <Questions questions={questions} />}
     />
+    <TwitterWidget />
   </div>
 );
 

@@ -89,6 +89,13 @@ input[type='radio'] {
   margin-right: 1em;
 }
 
+.twitter-widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Mobile Views */
 @media only screen and (max-width: 600px) {
 }
