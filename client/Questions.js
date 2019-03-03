@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import SelectForm from "./SelectForm";
 import RadioForm from "./RadioForm";
 import Result from "./Result";
 import sortHouse from "./sortHouse";
