@@ -2,12 +2,6 @@ import React from "react";
 import Form from "./Form";
 import { popupUtil } from "./popup-util";
 
-// var styles = {
-//   fontSize: "16px",
-//   buttons: {
-//     height: "100px"
-//   }
-// };
 
 class RadioForm extends React.Component {
   constructor(props) {
