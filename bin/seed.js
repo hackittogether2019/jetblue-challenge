@@ -13,7 +13,7 @@ const seed = async () => {
   }))
 
   await Promise.all(questions.map(async qData => {
-    const question = await Question.create({name: qData.name})
+    const question = await Question.create({name: qData.name, imgUrl: qData.imgUrl})
     await Promise.all(qData.choices.map(async cData => {
       const choice = await Choice.create(cData)
       await choice.setQuestion(question)
@@ -26,11 +26,11 @@ const seed = async () => {
     Seeding successful!
     Time to do stuff!
 
-  `)
-}
+  `);
+};
 
 seed().catch(err => {
-  db.close()
+  db.close();
   console.log(`
 
     Error seeding:
@@ -39,5 +39,5 @@ seed().catch(err => {
 
     ${err.stack}
 
-  `)
-})
+  `);
+});
