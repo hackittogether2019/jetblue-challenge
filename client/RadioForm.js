@@ -28,9 +28,7 @@ class RadioForm extends React.Component {
     const handleSubmit = this.props.handleSubmit;
 
     return (
-      // <form onSubmit={handleSubmit} className="text-center" style={styles}>
       <div>
-        {/* <form onSubmit={handleSubmit} className="choices-container"> */}
         <label>{name}</label>
         <div>
           {choices.map(choice => (
@@ -39,7 +37,6 @@ class RadioForm extends React.Component {
               value={choice.label}
               className="choice-buttons"
               key={choice.value}
-              // onClick={this.handleClick}
               onClick={handleSubmit}
             >
               {choice.label}
@@ -50,10 +47,6 @@ class RadioForm extends React.Component {
         <div className="text-center">
           {this.state.protip ? <h4>{this.state.protip}</h4> : null}
         </div>
-        {/* <button type="submit" disabled={!answer}>
-          Next
-        </button> */}
-        {/* </form> */}
       </div>
     );
   }
