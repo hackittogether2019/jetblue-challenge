@@ -1,18 +1,26 @@
+<<<<<<< HEAD
 import React from "react";
 import Form from "./Form";
 import { popupUtil } from "./popup-util";
+=======
+import React from 'react';
+import Form from './Form';
+import { popupUtil } from './popup-util';
+>>>>>>> 89f09812df82136aef08acb85e2159eae117f3e5
 
 class RadioForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      protip: null,
-      hoverShow: false
-    };
-    this.handleClick = this.handleClick.bind(this);
-    this.handleEnter = this.handleEnter.bind(this);
-    this.handleExit = this.handleExit.bind(this);
-  }
+	constructor(props) {
+		super(props);
+		this.state = {
+			protip: null,
+			hoverShow: false,
+		};
+		this.handleEnter = this.handleEnter.bind(this);
+		this.handleExit = this.handleExit.bind(this);
+	}
+
+	handleEnter(event) {
+		this.setState({ hoverShow: true });
 
   handleClick(event) {
     this.setState({ protip: event.target.value });
@@ -26,10 +34,10 @@ class RadioForm extends React.Component {
     this.setState({ protip: null });
   }
 
-  render() {
-    const name = this.props.question.name;
-    const choices = this.props.question.choices;
-    const handleSubmit = this.props.handleSubmit;
+	render() {
+		const name = this.props.question.name;
+		const choices = this.props.question.choices;
+		const handleSubmit = this.props.handleSubmit;
 
     return (
       <div className="questions-container">
