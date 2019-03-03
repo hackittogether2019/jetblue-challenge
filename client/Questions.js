@@ -14,6 +14,7 @@ export default class Questions extends Component {
   }
 
   answerQuestion(answer) {
+    console.log(this.state.answers);
     this.setState({
       currentQuestion: this.state.currentQuestion + 1,
       answers: [...this.state.answers, answer]

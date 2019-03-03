@@ -1,12 +1,6 @@
 import React from "react";
 import Form from "./Form";
-
-// var styles = {
-//   fontSize: "16px",
-//   buttons: {
-//     height: "100px"
-//   }
-// };
+import Popup from "reactjs-popup";
 
 class RadioForm extends React.Component {
   constructor(props) {
@@ -18,10 +12,9 @@ class RadioForm extends React.Component {
   }
 
   handleClick(event) {
-    // console.log(event.target.nextSibling.nodeValue);
-    // console.log(event.target.value);
     this.setState({ protip: event.target.value });
   }
+
   render() {
     const name = this.props.question.name;
     const choices = this.props.question.choices;
@@ -42,10 +35,6 @@ class RadioForm extends React.Component {
               {choice.label}
             </button>
           ))}
-        </div>
-
-        <div className="text-center">
-          {this.state.protip ? <h4>{this.state.protip}</h4> : null}
         </div>
       </div>
     );
