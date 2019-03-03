@@ -5,7 +5,7 @@
     "choices": [
       {
         "label": "Sitting in a jacuzzi surrounded by snow",
-        "value": ["Alaska", "Denver"]
+        "value": ["Denver"]
       },
       {
         "label": "Seeing live music and bar-hopping",
@@ -40,7 +40,7 @@
       },
       {
         "label": "Hiking",
-        "value": ["Alaska", "Denver"]
+        "value": ["Denver"]
       }
     ]
   },
@@ -58,7 +58,7 @@
       },
       {
         "label": "Research native wildlife from your destination",
-        "value": ["Alaska", "Denver"]
+        "value": ["Denver"]
       },
       {
         "label": "Snack on everything in sight",
@@ -80,7 +80,7 @@
       },
       {
         "label": "Give me two skiis and I'm good to go",
-        "value": ["Denver", "Alaska"]
+        "value": ["Denver"]
       },
       {
         "label": "Air conditioning and the radio are a MUST",
@@ -102,7 +102,7 @@
       },
       {
         "label": "Packing layers is key",
-        "value": ["Denver", "Alaska"]
+        "value": ["Denver"]
       },
       {
         "label": "As long as I don't forget my chargers, who cares!",
@@ -116,7 +116,7 @@
     "choices": [
       {
         "label": "Winter",
-        "value": ["Denver", "Alaska"]
+        "value": ["Denver"]
       },
       {
         "label": "Summer",
@@ -146,7 +146,7 @@
       },
       {
         "label": "Fresh salmon",
-        "value": ["Alaska"]
+        "value": [""]
       },
       {
         "label": "Rice, beans, and plantains",
@@ -168,7 +168,7 @@
       },
       {
         "label": "Interact with nature",
-        "value": ["Denver", "Alaska"]
+        "value": ["Denver"]
       },
       {
         "label": "Party!",

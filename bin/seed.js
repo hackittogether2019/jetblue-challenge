@@ -1,27 +1,26 @@
 #!/usr/bin/env node
 
-const { db, Question, Choice } = require('../server/db');
-const data = require('../data/questions.json');
+const {db, Question, Choice, Destination} = require('../server/db')
+const questions = require('../data/questions.json')
+const destinations = require('../data/destinations.json')
+
 
 const seed = async () => {
-  await db.sync({ force: true });
+  await db.sync({force: true})
 
-  await Promise.all(
-    data.map(async qData => {
-      const question = await Question.create({
-        name: qData.name,
-        imgUrl: qData.imgUrl,
-      });
-      await Promise.all(
-        qData.choices.map(async cData => {
-          const choice = await Choice.create(cData);
-          await choice.setQuestion(question);
-        })
-      );
-    })
-  );
+  await Promise.all(destinations.map(async dest => {
+    await Destination.create(dest)
+  }))
 
-  db.close();
+  await Promise.all(questions.map(async qData => {
+    const question = await Question.create({name: qData.name, imgUrl: qData.imgUrl})
+    await Promise.all(qData.choices.map(async cData => {
+      const choice = await Choice.create(cData)
+      await choice.setQuestion(question)
+    }))
+  }))
+
+  db.close()
   console.log(`
 
     Seeding successful!
