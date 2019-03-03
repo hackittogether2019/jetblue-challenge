@@ -25,9 +25,11 @@ const SelectForm = props => {
           </option>
         ))}
       </select>
-      <button type="submit" disabled={!answer}>
-        Next
-      </button>
+      <div className="text-center">
+        <button type="submit" className="btn btn-light" disabled={!answer}>
+          Next
+        </button>
+      </div>
     </form>
   );
 };
