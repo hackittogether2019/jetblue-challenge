@@ -24,6 +24,7 @@ class RadioForm extends React.Component {
   }
   render() {
     const name = this.props.question.name;
+    const img = this.props.question.imgUrl;
     const choices = this.props.question.choices;
     const handleSubmit = this.props.handleSubmit;
 
@@ -31,7 +32,7 @@ class RadioForm extends React.Component {
       <div>
         <label>{name}</label>
         <div>
-          <img src={`/images/beach-600.jpg`} />
+          <img src={img} />
           {choices.map(choice => (
             <button
               type="button"
