@@ -1,7 +1,7 @@
 [
   {
     "name": "What’s your idea of a perfect first night on vacation?",
-    "imgUrl": "/images/beach-600.jpg",
+    "imgUrl": "/images/beach-dance-600.jpg",
     "choices": [
       {
         "label": "Sitting in a jacuzzi surrounded by snow",
@@ -24,7 +24,7 @@
   },
   {
     "name": "What's your first stop when you land?",
-    "imgUrl": "/images/beach-600.jpg",
+    "imgUrl": "/images/hiking-600.jpg",
     "choices": [
       {
         "label": "Theme parks",
@@ -46,7 +46,7 @@
   },
   {
     "name": "How do you entertain yourself on a flight?",
-    "imgUrl": "/images/beach-600.jpg",
+    "imgUrl": "/images/plane-interior-600.jpg",
     "choices": [
       {
         "label": "Watch cartoons",
@@ -68,7 +68,7 @@
   },
   {
     "name": "How do you prefer to get around a new place?",
-    "imgUrl": "/images/beach-600.jpg",
+    "imgUrl": "/images/bike-600.jpg",
     "choices": [
       {
         "label": "Walk or bike around to take it all in",
@@ -90,7 +90,7 @@
   },
   {
     "name": "How do you pack your luggage?",
-    "imgUrl": "/images/beach-600.jpg",
+    "imgUrl": "/images/luggage-600.jpg",
     "choices": [
       {
         "label": "As little as possible",
@@ -156,7 +156,7 @@
   },
   {
     "name": "What's your philosophy when you go on vacation?",
-    "imgUrl": "/images/beach-600.jpg",
+    "imgUrl": "/images/travel-600.jpg",
     "choices": [
       {
         "label": "Relax",

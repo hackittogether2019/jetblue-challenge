@@ -29,16 +29,17 @@ class RadioForm extends React.Component {
     const handleSubmit = this.props.handleSubmit;
 
     return (
-      <div>
+      <div className="questions-container">
         <label>{name}</label>
-        <div>
-          <img src={img} />
+        <img src={img} />
+
+        <div className="choices-container">
           {choices.map(choice => (
             <button
               type="button"
               value={choice.label}
               className="choice-buttons"
-              key={choice.value}
+              key={choice.id}
               onClick={handleSubmit}
             >
               {choice.label}
