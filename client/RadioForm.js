@@ -2,7 +2,6 @@ import React from "react";
 import Form from "./Form";
 import { popupUtil } from "./popup-util";
 
-
 class RadioForm extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +19,6 @@ class RadioForm extends React.Component {
   }
   handleEnter(event) {
     this.setState({ hoverShow: true });
-
     this.setState({ protip: popupUtil(event.target.value) });
   }
   handleExit(event) {
@@ -35,7 +33,11 @@ class RadioForm extends React.Component {
 
     return (
       <div className="questions-container">
-        {this.state.hoverShow ? <h4>{this.state.protip}</h4> : null}
+        {this.state.hoverShow ? (
+          <div className="protips">
+            <h4>{this.state.protip}</h4>
+          </div>
+        ) : null}
         <label>{name}</label>
         <div className="choices-container">
           {choices.map(choice => (

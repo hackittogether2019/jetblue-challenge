@@ -3,13 +3,18 @@
 }
 
 body {
-  font: 'Verdana';
+  font: "Verdana";
   margin: 0;
   height: 100vh;
   width: 100vw;
   background: linear-gradient(45deg, #052158, #18498d, #275fa4);
   color: white;
   letter-spacing: 0.05em;
+}
+
+.protips {
+  margin: 20px;
+  background: linear-gradient(45deg, #37afff, #275fa4, #18498d);
 }
 
 .questions-container {
@@ -97,7 +102,7 @@ img {
   width: 200px;
 }
 
-input[type='radio'] {
+input[type="radio"] {
   margin-right: 1em;
 }
 
