@@ -19,7 +19,7 @@ class RadioForm extends React.Component {
     this.setState({ protip: popupUtil(event.target.value) });
   }
 
-  handleExit() {
+  handleExit(event) {
     this.setState({ hoverShow: false });
     this.setState({ protip: null });
   }
@@ -33,6 +33,7 @@ class RadioForm extends React.Component {
     return (
       <div className="questions-container">
         {this.state.hoverShow ? <h4>{this.state.protip}</h4> : null}
+        <h2>Jetblue Quiz!</h2>
         <label>{name}</label>
         <img src={img} />
         <div className="choices-container">
@@ -41,8 +42,8 @@ class RadioForm extends React.Component {
               type="button"
               value={choice.label}
               className="choice-buttons"
-              key={choice.id}
-              onClick={handleSubmit(choice.value)}
+              key={choice.value}
+              onClick={handleSubmit}
               onMouseEnter={this.handleEnter}
               onMouseOut={this.handleExit}
             >
