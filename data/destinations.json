@@ -1,0 +1,25 @@
+[{
+  "imgUrl": "https://media.giphy.com/media/TnDoEoXfT7YoE/giphy.gif",
+  "airport": "DEN",
+  "city": "Denver"
+}, {
+  "imgUrl": "https://media.giphy.com/media/xThtahNc6Ry0516sq4/giphy.gif",
+  "airport": "SJU",
+  "city": "San Juan"
+}, {
+  "imgUrl": "https://media.giphy.com/media/kolvlRnXh8Jj2/giphy.gif",
+  "airport": "MCO",
+  "city": "Orlando"
+}, {
+  "imgUrl": "https://media.giphy.com/media/YlTebmv4tDV29KLL8I/giphy.gif",
+  "airport": "MSY",
+  "city": "New Orleans"
+}, {
+  "imgUrl": "https://media.giphy.com/media/3ohs4gySYAzIlbUgF2/giphy.gif",
+  "airport": "BOS",
+  "city": "Boston"
+}, {
+  "imgUrl": "https://media.giphy.com/media/37QACk9KyQNc1elvR8/giphy.gif",
+  "airport": "LGB",
+  "city": "Long Beach"
+}]
