@@ -3,11 +3,11 @@
 }
 
 body {
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   height: 100vh;
   width: 100vw;
   margin: 0;
-  background: linear-gradient(45deg, #7700ff, #7700aa);
+  background: linear-gradient(45deg, #052158, #18498d, #275fa4);
   color: white;
   letter-spacing: 0.05em;
 }
@@ -33,6 +33,20 @@ body {
   align-items: center;
 }
 
+#jetblue-logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+#logo {
+  flex: 0 1 auto;
+  max-height: 400px;
+  width: auto;
+  align-self: center;
+}
+
 form > * {
   margin: 10px;
 }
@@ -56,6 +70,6 @@ img {
   width: 200px;
 }
 
-input[type=radio] {
+input[type="radio"] {
   margin-right: 1em;
 }
