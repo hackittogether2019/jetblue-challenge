@@ -108,10 +108,8 @@ input[type='radio'] {
 
 /* Mobile Views */
 @media only screen and (max-width: 600px) {
-  .choice-buttons {
-    height: 100px;
-    width: 200px;
-    flex: 0 1 auto;
-    margin: 10px;
+  .choices-container {
+    width: 100%;
+    height: 100%;
   }
 }
