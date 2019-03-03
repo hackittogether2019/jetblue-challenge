@@ -31,7 +31,7 @@ class RadioForm extends React.Component {
 							value={choice.label}
 							className="choice-buttons"
 							key={choice.id}
-							onClick={handleSubmit}
+							onClick={handleSubmit(choice.value)}
 						>
 							{choice.label}
 						</button>

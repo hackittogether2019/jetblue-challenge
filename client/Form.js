@@ -7,9 +7,11 @@ const Form = OtherComponent => {
 			this.handleSubmit = this.handleSubmit.bind(this);
 		}
 
-		handleSubmit(evt) {
-			evt.preventDefault();
-			this.props.answerQuestion(evt.target.value);
+		handleSubmit(answer) {
+			return function(evt) {
+				evt.preventDefault();
+				this.props.answerQuestion(answer);
+			}.bind(this);
 		}
 
 		render() {
