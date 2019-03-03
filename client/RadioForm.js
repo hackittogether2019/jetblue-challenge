@@ -1,13 +1,7 @@
 import React from "react";
 import Form from "./Form";
-import Popup from "reactjs-popup";
+import { popupUtil } from "./popup-util";
 
-// var styles = {
-//   fontSize: "16px",
-//   buttons: {
-//     height: "100px"
-//   }
-// };
 
 class RadioForm extends React.Component {
   constructor(props) {
@@ -23,15 +17,13 @@ class RadioForm extends React.Component {
 
   handleClick(event) {
     this.setState({ protip: event.target.value });
-    console.log(this.state.protip);
   }
   handleEnter(event) {
-    console.log("HOVER");
     this.setState({ hoverShow: true });
-    this.setState({ protip: "I love the beach!!" });
+
+    this.setState({ protip: popupUtil(event.target.value) });
   }
   handleExit(event) {
-    console.log("hover out");
     this.setState({ hoverShow: false });
     this.setState({ protip: null });
   }
@@ -43,7 +35,7 @@ class RadioForm extends React.Component {
 
     return (
       <div className="questions-container">
-        {this.state.hoverShow ? <h3>{this.state.protip}</h3> : null}
+        {this.state.hoverShow ? <h4>{this.state.protip}</h4> : null}
         <label>{name}</label>
         <div className="choices-container">
           {choices.map(choice => (
