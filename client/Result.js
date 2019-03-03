@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const Result = (props) => {
-  const house = props.house
-  return (
-    <div id='result'>
-      <img src={`/${house}.png`} />
-      <p>You ought to be in...{house}!</p>
-    </div>
-  )
-}
+const Result = props => {
+	const place = props.place;
+	return (
+		<div id="result">
+			<img src={`/${place}.png`} />
+			<p>You ought to be in...{place}!</p>
+		</div>
+	);
+};
 
-export default Result
+export default Result;
