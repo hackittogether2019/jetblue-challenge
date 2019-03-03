@@ -1,10 +1,12 @@
 const sortPlace = answers => {
+	console.log(answers);
 	const results = answers.reduce((obj, placeNames) => {
 		for (const placeName of placeNames) {
 			obj[placeName] = obj[placeName] + 1 || 1;
 		}
 		return obj;
 	}, {});
+	console.log(results);
 
 	let max = 0;
 	let place = '';
@@ -14,6 +16,7 @@ const sortPlace = answers => {
 			place = placeName;
 		}
 	}
+	console.log(place);
 	return place;
 };
 

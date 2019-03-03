@@ -14,14 +14,8 @@ class RadioForm extends React.Component {
 		this.state = {
 			protip: '',
 		};
-		this.handleClick = this.handleClick.bind(this);
 	}
 
-	handleClick(event) {
-		// console.log(event.target.nextSibling.nodeValue);
-		// console.log(event.target.value);
-		this.setState({ protip: event.target.value });
-	}
 	render() {
 		const name = this.props.question.name;
 		const choices = this.props.question.choices;
