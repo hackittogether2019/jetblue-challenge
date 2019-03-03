@@ -12,6 +12,20 @@ body {
   letter-spacing: 0.05em;
 }
 
+.choices-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.choice-buttons {
+  height: 100px;
+  width: 200px;
+  flex: 0 1 auto;
+  margin: 10px;
+}
+
 #app {
   width: 100%;
   height: 100%;
@@ -72,4 +86,8 @@ img {
 
 input[type="radio"] {
   margin-right: 1em;
+}
+
+/* Mobile Views */
+@media only screen and (max-width: 600px) {
 }
