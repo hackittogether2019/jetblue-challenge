@@ -1,5 +1,5 @@
-import React from "react";
-import Form from "./Form";
+import React from 'react';
+import Form from './Form';
 
 // var styles = {
 //   fontSize: "16px",
@@ -12,7 +12,7 @@ class RadioForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      protip: ""
+      protip: '',
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -33,6 +33,7 @@ class RadioForm extends React.Component {
       // <form onSubmit={handleSubmit} className="text-center" style={styles}>
       <div>
         <form onSubmit={handleSubmit} className="choices-container">
+          <img src={`/images/beach-600.jpg`} />
           <label>{name}</label>
           <div>
             {choices.map(choice => (
@@ -47,7 +48,6 @@ class RadioForm extends React.Component {
               </button>
             ))}
           </div>
-
           <div className="text-center">
             {this.state.protip ? <h4>{this.state.protip}</h4> : null}
           </div>
