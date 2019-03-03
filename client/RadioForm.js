@@ -1,37 +1,63 @@
 import React from "react";
 import Form from "./Form";
 
-var styles = {
-  fontSize: "16px"
-};
+// var styles = {
+//   fontSize: "16px",
+//   buttons: {
+//     height: "100px"
+//   }
+// };
 
-const RadioForm = props => {
-  const name = props.question.name;
-  const choices = props.question.choices;
-  const handleSubmit = props.handleSubmit;
-  const handleChange = props.handleChange;
-  const answer = props.answer;
+class RadioForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      protip: ""
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-  return (
-    <form onSubmit={handleSubmit} className="text-left" style={styles}>
-      <label>{name}</label>
-      {choices.map(choice => (
-        <label key={choice.value}>
-          <input
-            type="radio"
-            value={choice.value}
-            checked={answer === choice.value}
-            name="answer"
-            onChange={handleChange}
-          />
-          {choice.label}
-        </label>
-      ))}
-      <button type="submit" disabled={!answer}>
-        Next
-      </button>
-    </form>
-  );
-};
+  handleClick(event) {
+    // console.log(event.target.nextSibling.nodeValue);
+    // console.log(event.target.value);
+    this.setState({ protip: event.target.value });
+  }
+  render() {
+    const name = this.props.question.name;
+    const choices = this.props.question.choices;
+    const handleSubmit = this.props.handleSubmit;
+    // const handleChange = this.props.handleChange;
+    const answer = this.props.answer;
+
+    return (
+      // <form onSubmit={handleSubmit} className="text-center" style={styles}>
+      <div>
+        <form onSubmit={handleSubmit} className="choices-container">
+          <label>{name}</label>
+          <div>
+            {choices.map(choice => (
+              <button
+                type="button"
+                value={choice.label}
+                className="choice-buttons"
+                key={choice.value}
+                onClick={this.handleClick}
+              >
+                {choice.label}
+              </button>
+            ))}
+          </div>
+
+          <div className="text-center">
+            {this.state.protip ? <h4>{this.state.protip}</h4> : null}
+          </div>
+          <button type="submit" disabled={!answer}>
+            Next
+          </button>
+        </form>
+      </div>
+    );
+  }
+}
 
 export default Form(RadioForm);
