@@ -1,14 +1,13 @@
-import React from "react";
-import Form from "./Form";
-import { popupUtil } from "./popup-util";
-
+import React from 'react';
+import Form from './Form';
+import { popupUtil } from './popup-util';
 
 class RadioForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       protip: null,
-      hoverShow: false
+      hoverShow: false,
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleEnter = this.handleEnter.bind(this);
@@ -36,6 +35,7 @@ class RadioForm extends React.Component {
     return (
       <div className="questions-container">
         {this.state.hoverShow ? <h4>{this.state.protip}</h4> : null}
+        <h2>Jetblue Quiz!</h2>
         <label>{name}</label>
         <div className="choices-container">
           {choices.map(choice => (
