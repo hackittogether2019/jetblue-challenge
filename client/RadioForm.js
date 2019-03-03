@@ -1,5 +1,5 @@
-import React from "react";
-import Form from "./Form";
+import React from 'react';
+import Form from './Form';
 
 // var styles = {
 //   fontSize: "16px",
@@ -12,7 +12,7 @@ class RadioForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      protip: ""
+      protip: '',
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -28,9 +28,9 @@ class RadioForm extends React.Component {
     const handleSubmit = this.props.handleSubmit;
 
     return (
-      <div>
+      <div className="questions-container">
         <label>{name}</label>
-        <div>
+        <div className="choices-container">
           {choices.map(choice => (
             <button
               type="button"
