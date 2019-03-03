@@ -31,7 +31,7 @@ class Main extends React.Component {
           endpoint="questions"
           render={({ questions }) => <Questions questions={questions} />}
         />
-        <TwitterWidget />
+        {/* <TwitterWidget /> */}
       </div>
     );
   }

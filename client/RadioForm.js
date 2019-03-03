@@ -42,8 +42,8 @@ class RadioForm extends React.Component {
               type="button"
               value={choice.label}
               className="choice-buttons"
-              key={choice.value}
-              onClick={handleSubmit}
+              key={choice.id}
+              onClick={handleSubmit(choice.value)}
               onMouseEnter={this.handleEnter}
               onMouseOut={this.handleExit}
             >
