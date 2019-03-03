@@ -1,6 +1,7 @@
 import React from "react";
 import Load from "./Load";
 import Questions from "./Questions";
+import TwitterWidget from "./TwitterWidget";
 
 var styles = {
   width: "400px"
